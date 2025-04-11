@@ -71,11 +71,8 @@ label7="$(color $statsLabelColor "=> Memory") $(color $bulletColor "······
 label8="$(hostname -I)"
 label8="$(color $statsLabelColor "=> Local IP") $(color $bulletColor "·····")$(color $statsLabelColor "›") $(color $infoColor $label8)"
 
-# Print
 echo
-# Two Entries Per Line
 echo -e "$label1"
-#echo -e "$label2"
 echo -e "$label3"
 echo -e "$label4"
 echo -e "$label5"
