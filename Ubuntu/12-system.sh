@@ -65,7 +65,7 @@ label5="$(color $statsLabelColor "=> Disk") $(color $bulletColor "·······
 label6="$(/bin/ls -d /proc/[0-9]* | wc -l)"
 label6="$(color $statsLabelColor "=> Procs") $(color $bulletColor "········")$(color $statsLabelColor "›") $(color $infoColor $label6)"
 
-label7="$(free -h --si | awk 'NR==2 { printf "%sB / %sB \\e[38;5;144m» Free: %sB\\e[0m",$3,$2, 4; }')"
+label7="$(free -h --si | awk 'NR==2 { printf "%sB / %sB \\e[38;5;144m» Free: %sB\\e[0m",$3,$2, $4; }')"
 label7="$(color $statsLabelColor "=> Memory") $(color $bulletColor "·······")$(color $statsLabelColor "›") $(color $infoColor "$label7")"
 
 label8="$(hostname -I)"
